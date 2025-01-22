@@ -44,9 +44,5 @@ public ResponseEntity<Void> deleteStudentById(@PathVariable Long id){
 	service.deleteById(id);
 	return ResponseEntity.noContent().build();
 }
-private void sysout() {
-	// TODO Auto-generated method stub
-	System.out.println("Hello");
-}
 }
 
