@@ -44,5 +44,12 @@ public ResponseEntity<Void> deleteStudentById(@PathVariable Long id){
 	service.deleteById(id);
 	return ResponseEntity.noContent().build();
 }
+
+/*@DeleteMapping("/{id}")
+public ResponseEntity<Void> deleteStudentById(@PathVariable Long id){
+	service.deleteById(id);
+	return ResponseEntity.noContent().build();
+}*/
+
 }
 
