@@ -24,7 +24,7 @@ import com.test.CRUDSpringBoot.model.User;
 public class UserController {
 	@Autowired
 	private UserService service;
-	
+	@Autowired
 	private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 	
 	@PostMapping("/login")

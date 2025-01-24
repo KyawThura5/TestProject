@@ -23,6 +23,7 @@ SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Excepti
 	   .csrf(csrf->csrf.disable())
 	   .authorizeHttpRequests((authorize)->authorize
 			   .requestMatchers(AntPathRequestMatcher.antMatcher("/api/users/**")).permitAll()
+			  // .requestMatchers(AntPathRequestMatcher.antMatcher("/api/courses/**")).permitAll()
 			   .anyRequest().authenticated()
 			   )
 	           .httpBasic(withDefaults());
