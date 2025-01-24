@@ -73,4 +73,10 @@ public class UserController {
 		service.deleteUser(id);
 		return ResponseEntity.noContent().build();
 	}
+	/*	@GetMapping("/{id}")
+	public ResponseEntity<User> getUserById(@PathVariable Long id) {
+	 return service.getUserById(id)
+			 .map(ResponseEntity::ok)
+			 .orElse(ResponseEntity.notFound().build());	
+	}*/
 }
